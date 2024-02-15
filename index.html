@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gym App Sign Up</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      margin: 0;
+      padding: 0;
+    }
+
+    #container {
+      width: 400px;
+      margin: 50px auto;
+      padding: 20px;
+      border: 2px solid #3498db;
+      border-radius: 10px;
+      background-color: #ecf0f1;
+    }
+
+    h2 {
+      text-align: center;
+      color: #34495e;
+    }
+
+    label {
+      display: block;
+      margin: 10px 0;
+      color: #7f8c8d;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 10px;
+      box-sizing: border-box;
+      border: 1px solid #bdc3c7;
+      border-radius: 5px;
+    }
+
+    button {
+      background-color: #3498db;
+      color: #fff;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    button:hover {
+      background-color: #2980b9;
+    }
+  </style>
+</head>
+<body>
+
+<div id="container">
+  <h2>Gym App Sign Up</h2>
+  <form>
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required>
+
+    <label for="exercise">Exercise Selection:</label>
+    <select id="exercise" name="exercise" required>
+      <option value="cardio">Cardio</option>
+      <option value="strength">Strength Training</option>
+      <option value="flexibility">Flexibility</option>
+    </select>
+
+    <label for="dietPlan">Diet Plan:</label>
+    <select id="dietPlan" name="dietPlan" required>
+      <option value="lowCarb">Low Carb</option>
+      <option value="highProtein">High Protein</option>
+      <option value="balanced">Balanced</option>
+    </select>
+
+    <label for="age">Age:</label>
+    <input type="number" id="age" name="age" required>
+
+    <button type="submit">Sign Up</button>
+  </form>
+</div>
+
+</body>
+</html>
+
